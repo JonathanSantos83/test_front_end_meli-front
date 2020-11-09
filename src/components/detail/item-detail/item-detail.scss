@@ -1,0 +1,39 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+
+.item-detail {
+    background-color: $color-white;
+    padding-top: 32px;
+    .item-detail-description-ctn {
+        @include respond-to(desktop) {
+            padding-left: 32px;
+        }
+        .item-detail-title {
+            margin: 0;
+            @include font-rem(600, 28px, 28px, null);
+        }
+        .item-description {
+            padding: 32px 0;
+            @include font-rem(normal, 16px, 20px, null);
+        }
+    }
+    .condition {
+        padding-top: 32px;
+        padding-bottom: 16px;
+    }
+    .item-detail-title {
+        @include font-rem(bold, 24px, 36px, null);
+        margin-bottom: 0;
+    }
+    .price {
+        @include font-rem(normal, 40px, 40px, null);
+        margin: 0;
+        padding: 32px 0;
+    }
+    .btn-item-buy {
+        width: 100%;
+        background-color: $color-blue;
+        color: $color-white;
+        margin-right: 32px;
+    }
+}

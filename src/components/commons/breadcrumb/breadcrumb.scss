@@ -1,0 +1,16 @@
+@import '../../../scss/mixins.scss';
+@import '../../../scss/variables.scss';
+
+.breadcrumb {
+    padding: 16px 0;
+    margin: 0;
+    color: $color-grey-70;
+    li {
+        @include font-rem(normal, 14px, 14px, null);
+    }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: '>';
+}
+
